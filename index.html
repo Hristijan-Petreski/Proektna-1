@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Travel Planner</title>
+</head>
+<body>
+
+<header class="container-fluid text-center" style="background-color: #ffe38d; font-size: 3em;">
+    Travel Planner
+</header>
+
+<main class="container-fluid">
+<h2>Dobredojdovte vo Travel Planner</h2>
+<h4>Vnesete go vashiot email i lozinka za da se najavite</h4>
+<hr>
+<form id="forma" onsubmit="return false;">
+    <input type="text" id="korisnicki_email" placeholder="Vnesete go vashiot email">
+    <input type="password" id="lozinka" placeholder="Vnesi lozinka">
+    <button type="button" id="kopce_za_najava" onclick="najaviSe()">Najavi se</button>
+</form>
+
+<hr>
+<p>Filtriraj:</p>
+<form id="filtriraj" onsubmit="return false;">
+    <input type="text" placeholder="Vnesete ja kategorijata" id="kategorija_filtriraj">
+    <input type="number" placeholder="Vnesete go vashiot budzet" id="maksimalen_budzet">
+    <button type="button" id="kopce_za_filtiranje" onclick="filtrirajDestinacii()">Filtriraj</button>
+</form>
+
+<hr>
+<p>Vkupni patni trosoci od site gradovi zaedno: <span id="vkupni_trosoci">0</span>$</p>
+<button type="button" onclick="presmetajVkupniTrosoci()">Prikazi vkupni trosoci</button>
+
+<section id="destinacii" class="row" style="margin-top:10px">
+
+<div id="Ohrid" class="card" data-ime="Ohrid" data-cena="100" data-kategorija="Priroda">
+    <div class="card-body">
+        <h5 class="card-title">Ohrid</h5>
+        <p class="card-text">Cena: 100$</p>
+        <p class="card-text">Kategorija: Priroda</p>
+    </div>
+    <div class="card-footer">
+        <button class="btn-danger" onclick="izbrisiDestinacija(this)">Izbrisi</button>
+        <button class="btn-info" onclick="otvoriGrad(this)">Povekje Info</button>
+    </div>
+</div>
+
+<div id="Milano" class="card" data-ime="Milano" data-cena="250" data-kategorija="Moda">
+    <div class="card-body">
+        <h5 class="card-title">Milano</h5>
+        <p class="card-text">Cena: 250$</p>
+        <p class="card-text">Kategorija: Moda</p>
+    </div>
+    <div class="card-footer">
+        <button class="btn-danger" onclick="izbrisiDestinacija(this)">Izbrisi</button>
+        <button class="btn-info" onclick="otvoriGrad(this)">Povekje Info</button>
+    </div>
+</div>
+
+<div id="Pariz" class="card" data-ime="Pariz" data-cena="350" data-kategorija="Kultura">
+    <div class="card-body">
+        <h5 class="card-title">Pariz</h5>
+        <p class="card-text">Cena: 350$</p>
+        <p class="card-text">Kategorija: Kultura</p>
+    </div>
+    <div class="card-footer">
+        <button class="btn-danger" onclick="izbrisiDestinacija(this)">Izbrisi</button>
+        <button class="btn-info" onclick="otvoriGrad(this)">Povekje Info</button>
+    </div>
+</div>
+
+</section>
+
+<div id="prikaz_detali" style="margin-top:20px;"></div>
+
+<hr>
+<h5>Dodadi nova destinacija</h5>
+<form id="dodadi_destinacija" style="padding: 10px; margin-top: 10px;" onsubmit="return false;">
+    <input type="text" id="ime" placeholder="Vnesete go imeto na gradot">
+    <input type="number" id="cena" placeholder="Vnesete ja cenata">
+    <input type="text" id="kategorija" placeholder="Vnesete ja kategorijata">
+    <button type="button" id="kopce_za_dodavanje" onclick="dodadiDestinacija()">Dodadi destinacija</button>
+</form>
+<hr>
+<form id="anketa" style="margin-bottom: 15px;"return false;">
+    <h5>Anketa</h5>
+    <input type="text" class="form-control" id="anketa_prasalnik" placeholder="Kazete ni sto vi de dopadna i kako moze da se podorbi planerot">
+    <input type="radio" name="ocenka" value="5">5
+    <input type="radio" name="ocenka" value="4">4
+    <input type="radio" name="ocenka" value="3">3
+    <input type="radio" name="ocenka" value="2">2
+    <input type="radio" name="ocenka" value="1">1
+    <select class="form-control" id="anketa_select" style="margin-bottom: auto;">
+    <option value="Filtriranje">Filtriranje</option>
+    <option value="Najava">Najava</option>
+    <option value="Dodavanje na destinacija">Dodavanje na destinacija</option>
+    <option value="Presmetuvanje na vkupni trosoci">Presmetuvanje na vkupni trosoci</option>
+    <option value="Brisenje na destinacija">Brisenje na destinacija</option>
+    <option value="Drugo">Drugo</option>
+    </select>  
+    <button type="button" class="btn-info" id="kopce_za_anketa" style="margin: top 10pxs;;" onclick="pratiAnketa()">Prati anketa</button>
+</form>
+<hr>
+</main>
+
+<footer class="container-fluid fixed-bottom text-center p-0" style="background-color: #ff5353;">
+    <p class="m-0 small">Proektna zadaca broj 1</p>
+</footer>
+
+<script src="javascript.js"></script>
+</body>
+</html>
