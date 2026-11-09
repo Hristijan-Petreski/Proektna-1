@@ -84,14 +84,17 @@
     <button type="button" id="kopce_za_dodavanje" onclick="dodadiDestinacija()">Dodadi destinacija</button>
 </form>
 <hr>
-<form id="anketa" style="margin-bottom: 15px;"return false;">
+<form id="anketa" style="margin-bottom: 15px;" onsubmit="return false;">
     <h5>Anketa</h5>
-    <input type="text" class="form-control" id="anketa_prasalnik" placeholder="Kazete ni sto vi de dopadna i kako moze da se podorbi planerot">
+    <h6>Dokolku sakate popolnete ja anketata koja ke ni pomogne da go podobrime sajtot</h6>
+    <input type="text" class="form-control" id="anketa_prasalnik" placeholder="Vnesete gi vasite zabaleski">
+    <br></br><h6>Vnesete ocenka</h6>
     <input type="radio" name="ocenka" value="5">5
     <input type="radio" name="ocenka" value="4">4
     <input type="radio" name="ocenka" value="3">3
     <input type="radio" name="ocenka" value="2">2
     <input type="radio" name="ocenka" value="1">1
+    <br></br><h6>Shto vi se dopadna najmnogu?</h6>
     <select class="form-control" id="anketa_select" style="margin-bottom: auto;">
     <option value="Filtriranje">Filtriranje</option>
     <option value="Najava">Najava</option>
@@ -100,7 +103,8 @@
     <option value="Brisenje na destinacija">Brisenje na destinacija</option>
     <option value="Drugo">Drugo</option>
     </select>  
-    <button type="button" class="btn-info" id="kopce_za_anketa" style="margin: top 10pxs;;" onclick="pratiAnketa()">Prati anketa</button>
+    <br></br>
+    <button type="button" class="btn-primary" id="kopce_za_anketa" onclick="pratiAnketa()">Prati anketa</button>
 </form>
 <hr>
 </main>
