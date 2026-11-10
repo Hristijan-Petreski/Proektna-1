@@ -202,7 +202,7 @@ function dislikeSlika(ime, slikaindex){
 }
 
 function dodadiKomentar(ime, slikaindex){
-    var komentar = document.getElementById("novKomentar_" + ime + "_" + slikaindex);
+    var komentar = document.getElementById("novKomentar_" + ime + "_" + slikaindex).value;
     if (komentar !== "") {
         bazaGradovi[ime].sliki[slikaindex].komentari.push(komentar);
         var divKomentari = document.getElementById("komentari_" + ime + "_" + slikaindex);
