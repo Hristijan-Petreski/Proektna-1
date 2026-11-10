@@ -1,8 +1,8 @@
-
 var bazaGradovi = {
     "Ohrid": {
         ime: "Ohrid",
         statia: "Ohrid e bisertot na Makedonija so bogata istorija, ezeroto i starata arhitektura.",
+        napisi: "Ohrid e poznat po 365 crkvi, po edna za sekoj den vo godinata.",
         top10: [
             "Sv. Jovan Kaneo", "Samuilova Tvrdina", "Plaosnik", "Sv. Naum", 
             "Ohridska Carsija", "Zaliv na Kskite (Bay of Bones)", "Biljanini Izvori", 
@@ -26,6 +26,7 @@ var bazaGradovi = {
     "Milano": {
         ime: "Milano",
         statia: "Milano e svetka metropola na modata, dizajnot i italijanskata kultura.",
+        napisi: "Milano e dom na slavnata slika Poslednata Vecera od Leonardo da Vinci.",
         top10: [
             "Duomo di Milano", "Galleria Vittorio Emanuele II", "Teatro alla Scala", 
             "Castello Sforzesco", "Santa Maria delle Grazie", "Brera Art Gallery", 
@@ -49,6 +50,7 @@ var bazaGradovi = {
     "Pariz": {
         ime: "Pariz",
         statia: "Pariz e gradot na svetlinata, romantikata, umetnosta i vrvnata hrana.",
+        napisi: "Pariz ima nad 450 parkovi i gradini koi nudat vistinsko uzivanje.",
         top10: [
             "Eiffel Tower", "Louvre Museum", "Notre-Dame Cathedral", "Arc de Triomphe", 
             "Sacre-Coeur", "Musee d'Orsay", "Krstarenje po Sena", "Palais Garnier", 
@@ -70,7 +72,6 @@ var bazaGradovi = {
         ]
     }
 };
-
 
 function najaviSe() {
     var email = document.getElementById("korisnicki_email").value;
@@ -109,6 +110,7 @@ function dodadiDestinacija() {
         bazaGradovi[ime] = {
             ime: ime,
             statia: "Nema vneseno statija za ovoj grad.",
+            napisi: "Nema vneseno napis za ovoj grad.",
             top10: ["Nema vneseno atrakcii"],
             sliki: []
         };
@@ -169,6 +171,8 @@ function otvoriGrad(button) {
 
     html += '<hr></hr><h4>Statii</h4>';
     html += '<p>' + grad.statia + '</p>';
+    html += '<hr></hr><h4>Napisi</h4>';
+    html += '<p>' + grad.napisi + '</p>';
     html += '<hr></hr><h4>Sliki</h4>';
 
     for (var i = 0; i < sliki.length; i++) {
@@ -187,8 +191,14 @@ function otvoriGrad(button) {
         html += '<button class="btn-info" onclick="dodadiKomentar(\'' + ime + '\', ' + i + ')">Dodadi</button>';
         html += '</div>';
     }
+    html+='<button class="btn-danger" onclick="zatvori(this)">Zatvori</button>';
     kontejner.innerHTML = html;
     kontejner.style.display = "block";
+}
+function zatvori(button){
+    var x = document.getElementById("prikaz_detali");
+    x.style.display="none";
+
 }
 
 function likeSlika(ime, slikaindex){
