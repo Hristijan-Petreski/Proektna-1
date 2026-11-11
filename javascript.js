@@ -1,73 +1,73 @@
 var bazaGradovi = {
     "Ohrid": {
         ime: "Ohrid",
-        statia: "Ohrid e bisertot na Makedonija so bogata istorija, ezeroto i starata arhitektura.",
-        napisi: "Ohrid e poznat po 365 crkvi, po edna za sekoj den vo godinata.",
+        statia: "Охрид е бисерот на Македонија со богата историја, езерото и старата архитектура.",
+        napisi: "Охрид е познат по 365 цркви, по една за секој ден во годината.",
         top10: [
-            "Sv. Jovan Kaneo", "Samuilova Tvrdina", "Plaosnik", "Sv. Naum", 
-            "Ohridska Carsija", "Zaliv na Kskite (Bay of Bones)", "Biljanini Izvori", 
-            "Gradski Park", "Galicica", "Kuka na Robevci"
+            "Св. Јован Канео", "Самуилова Тврдина", "Плаошник", "Св. Наум", 
+            "Охридска Чаршија", "Залив на Коските (Bay of Bones)", "Билјанини Извори", 
+            "Градски Парк", "Галичица", "Куќа на Робевци"
         ],
         sliki: [
             {
                 url: "https://images.pexels.com/photos/35259050/pexels-photo-35259050.jpeg?cs=srgb&dl=pexels-yavuz-selim-ozturk-2158256783-35259050.jpg&fm=jpg",
                 likes: 24,
                 dislikes: 2,
-                komentari: ["Prekrasno mesto na ezeroto!", "Samuilovata tvrdina e neverojatna!"]
+                komentari: ["Прекрасно место на езерото!", "Самуиловата тврдина е неверојатна!"]
             },
             {
                 url: "https://images.pexels.com/photos/32937523/pexels-photo-32937523.jpeg?cs=srgb&dl=pexels-valentin-cvetanoski-2147958923-32937523.jpg&fm=jpg",
                 likes: 12,
                 dislikes: 1,
-                komentari: ["Odlicen pogled od Kaneo!"]
+                komentari: ["Одличен поглед од Канео!"]
             }
         ]
     },
     "Milano": {
         ime: "Milano",
-        statia: "Milano e svetka metropola na modata, dizajnot i italijanskata kultura.",
-        napisi: "Milano e dom na slavnata slika Poslednata Vecera od Leonardo da Vinci.",
+        statia: "Милано е светска метропола на модата, дизајнот и италијанската култура.",
+        napisi: "Милано е дом на славната слика Последната Вечера од Леонардо да Винчи.",
         top10: [
-            "Duomo di Milano", "Galleria Vittorio Emanuele II", "Teatro alla Scala", 
-            "Castello Sforzesco", "Santa Maria delle Grazie", "Brera Art Gallery", 
-            "Navigli Canal", "Parco Sempione", "San Siro Stadium", "Quadrilatero della Moda"
+            "Дуомо ди Милано", "Галерија Виторио Емануеле II", "Театро ала Скала", 
+            "Кастело Сфорцеско", "Санта Марија деле Грацие", "Брера Арт Галерија", 
+            "Навигли Канал", "Парко Семпионе", "Сан Сиро Стадион", "Квадрилатеро дела Мода"
         ],
         sliki: [
             {
                 url: "https://images.unsplash.com/photo-1513581166391-887a96ddeafd?w=400",
                 likes: 18,
                 dislikes: 1,
-                komentari: ["Duomo e fascinantna katedrala!", "Odlicno mesto za shoping."]
+                komentari: ["Дуомо е фасцинантна катедрала!", "Одлично место за шопинг."]
             },
             {
                 url: "https://cdn.shopify.com/s/files/1/0182/8937/files/compras-en-milan_1024x1024.jpg?v=1584528264",
                 likes: 8,
                 dislikes: 0,
-                komentari: ["Prekrasna arhitektura."]
+                komentari: ["Прекрасна архитектура."]
             }
         ]
     },
     "Pariz": {
         ime: "Pariz",
-        statia: "Pariz e gradot na svetlinata, romantikata, umetnosta i vrvnata hrana.",
-        napisi: "Pariz ima nad 450 parkovi i gradini koi nudat vistinsko uzivanje.",
+        statia: "Париз е градот на светлината, романтиката, уметноста и врвната храна.",
+        napisi: "Париз има над 450 паркови и градини кои нудат вистинско уживање.",
         top10: [
-            "Eiffel Tower", "Louvre Museum", "Notre-Dame Cathedral", "Arc de Triomphe", 
-            "Sacre-Coeur", "Musee d'Orsay", "Krstarenje po Sena", "Palais Garnier", 
-            "Luxembourg Gardens", "Montmartre"
+            "Ајфелова Кула", "Музејот Лувр", "Катедралата Нотр Дам", "Триумфална Капија", 
+            "Сакр Кер", "Музеј Орсеј", "Крстарење по Сена", "Палата Гарние", 
+            "Луксембуршки Градини", "Монмартр"
         ],
         sliki: [
             {
                 url: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400",
                 likes: 35,
                 dislikes: 3,
-                komentari: ["Ajfelovata kula vo zivo e magicna!"]
+                komentari: ["Ајфеловата кула во живо е магична!"]
             },
             {
                 url: "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=400",
                 likes: 20,
                 dislikes: 2,
-                komentari: ["Luvr bara cel den za poseta."]
+                komentari: ["Лувр бара цел ден за посета."]
             }
         ]
     }
@@ -77,10 +77,10 @@ function najaviSe() {
     var email = document.getElementById("korisnicki_email").value;
     var lozinka = document.getElementById("lozinka").value;
     if (email == "hristijanpetreski2005@gmail.com" && lozinka == "12345") {
-        window.alert("Uspesno ste najaveni");
+        window.alert("Успешно сте најавени!");
     }
     else {
-        window.alert("Greska pri najava");
+        window.alert("Грешка при најава!");
     }
 }
 
@@ -93,15 +93,17 @@ function dodadiDestinacija() {
     if (ime === "" || cena === "") return;
 
     var novaKarticka = `
-    <div id="${ime}" class="card" data-ime="${ime}" data-cena="${cena}" data-kategorija="${kategorija}"> 
-        <div class="card-body">
-            <h5 class="card-title">${ime}</h5>
-            <p class="card-text">Cena: ${cena}$</p>
-            <p class="card-text">Kategorija: ${kategorija}</p>
-        </div>
-        <div class="card-footer">
-            <button class="btn-danger" onclick="izbrisiDestinacija(this)">Izbrisi</button>
-            <button class="btn-info" onclick="otvoriGrad(this)">Povekje Info</button>
+    <div id="${ime}" class="col-md-4 mb-4 destinacija-item" data-ime="${ime}" data-cena="${cena}" data-kategorija="${kategorija}"> 
+        <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+                <h5 class="card-title text-primary">${ime}</h5>
+                <p class="card-text mb-1"><strong>Цена:</strong> ${cena}$</p>
+                <p class="card-text"><strong>Категорија:</strong> ${kategorija}</p>
+            </div>
+            <div class="card-footer bg-white border-top-0 d-flex justify-content-between">
+                <button class="btn btn-sm btn-info" onclick="otvoriGrad(this)">Повеќе Инфо</button>
+                <button class="btn btn-sm btn-danger" onclick="izbrisiDestinacija(this)">Избриши</button>
+            </div>
         </div>
     </div>`;
     destinacii.insertAdjacentHTML("beforeend", novaKarticka);
@@ -118,12 +120,12 @@ function dodadiDestinacija() {
 }
 
 function izbrisiDestinacija(button) {
-    var karticka = button.closest(".card");
+    var karticka = button.closest(".destinacija-item");
     karticka.remove();
 }
 
 function presmetajVkupniTrosoci() {
-    var destinacii = document.getElementById("destinacii").getElementsByClassName("card");
+    var destinacii = document.getElementById("destinacii").getElementsByClassName("destinacija-item");
     var vkupno = 0;
     for (var i = 0; i < destinacii.length; i++) {
         var cena = parseFloat(destinacii[i].dataset.cena);
@@ -137,7 +139,7 @@ function presmetajVkupniTrosoci() {
 function filtrirajDestinacii() {
     var kategorija = document.getElementById("kategorija_filtriraj").value.toLowerCase();
     var maksimalenbudzet = parseInt(document.getElementById("maksimalen_budzet").value);
-    var destinacii = document.getElementById("destinacii").getElementsByClassName("card");
+    var destinacii = document.getElementById("destinacii").getElementsByClassName("destinacija-item");
 
     for (var i = 0; i < destinacii.length; i++) {
         var cena = parseInt(destinacii[i].dataset.cena);
@@ -153,52 +155,75 @@ function filtrirajDestinacii() {
 }
 
 function pratiAnketa(){
-    window.alert("Vasata anketa e pratena, vi blagodarime za odvoenoto vreme");
+    window.alert("Вашата анкета е пратена, ви благодариме за одвоеното време!");
 }
 
 function otvoriGrad(button) {
-    var karticka = button.closest(".card");
+    var karticka = button.closest(".destinacija-item");
     var ime = karticka.dataset.ime;
     var grad = bazaGradovi[ime];
     var kontejner = document.getElementById("prikaz_detali");
     var sliki = grad.sliki;
     var top10 = grad.top10;
-    var html = '<h2>' + ime + '</h2><hr></hr>';
-    html += '<h4>Top 10</h4>';
+    
+    var html = '<div class="card shadow-sm border-info mt-4 p-4">';
+    html += '<div class="d-flex justify-content-between align-items-center mb-3"> <h2 class="text-info m-0">' + ime + '</h2> <button class="btn btn-danger" onclick="zatvori(this)">X Затвори</button> </div><hr>';
+    
+    html += '<div class="row">';
+    
+    // Лева колона (Инфо)
+    html += '<div class="col-md-5">';
+    html += '<h4>Топ 10</h4><ul>';
     for (var i = 0; i < top10.length; i++) {
-        html += '<p>' + top10[i] + '</p>';
+        html += '<li>' + top10[i] + '</li>';
     }
+    html += '</ul><hr>';
+    html += '<h4>Статии</h4><p>' + grad.statia + '</p><hr>';
+    html += '<h4>Написи</h4><p>' + grad.napisi + '</p>';
+    html += '</div>';
 
-    html += '<hr></hr><h4>Statii</h4>';
-    html += '<p>' + grad.statia + '</p>';
-    html += '<hr></hr><h4>Napisi</h4>';
-    html += '<p>' + grad.napisi + '</p>';
-    html += '<hr></hr><h4>Sliki</h4>';
-
+    // Десна колона (Галерија)
+    html += '<div class="col-md-7">';
+    html += '<h4>Галерија и коментари</h4>';
     for (var i = 0; i < sliki.length; i++) {
         var slika = sliki[i];
-        html += '<div style="border:1px solid #ccc; padding:10px; margin-bottom:15px;">';
-        html += '<img src="' + slika.url + '" alt="Slika" width="400"><br><br>';
-        html += '<button class="btn-primary" onclick="likeSlika(\'' + ime + '\', ' + i + ')">Like <span id="like_' + ime + '_' + i + '">' + slika.likes + '</span></button> ';
-        html += '<button class="btn-secondary" onclick="dislikeSlika(\'' + ime + '\', ' + i + ')">Dislike <span id="dislike_' + ime + '_' + i + '">' + slika.dislikes + '</span></button>';
-        html += '<h5>Komentari:</h5>';
-        html += '<div id="komentari_' + ime + '_' + i + '">';
+        html += '<div class="card mb-3 border-0 shadow-sm">';
+        html += '<img src="' + slika.url + '" class="card-img-top rounded" alt="Slika">';
+        html += '<div class="card-body">';
+        html += '<div class="mb-3">';
+        html += '<button class="btn btn-sm btn-outline-success mr-2" onclick="likeSlika(\'' + ime + '\', ' + i + ')">👍 Like <span class="badge badge-success" id="like_' + ime + '_' + i + '">' + slika.likes + '</span></button>';
+        html += '<button class="btn btn-sm btn-outline-danger" onclick="dislikeSlika(\'' + ime + '\', ' + i + ')">👎 Dislike <span class="badge badge-danger" id="dislike_' + ime + '_' + i + '">' + slika.dislikes + '</span></button>';
+        html += '</div>';
+        
+        html += '<h6 class="text-muted">Коментари:</h6>';
+        html += '<div id="komentari_' + ime + '_' + i + '" class="bg-light p-2 mb-2 rounded" style="max-height: 150px; overflow-y: auto;">';
         for (var j = 0; j < slika.komentari.length; j++) {
-            html += '<p>Komentar: ' + slika.komentari[j] + '</p>';
+            html += '<p class="small mb-1 border-bottom pb-1">💬 ' + slika.komentari[j] + '</p>';
         }
         html += '</div>';
-        html += '<input type="text" placeholder="Dodadi komentar" id="novKomentar_' + ime + '_' + i + '"> ';
-        html += '<button class="btn-info" onclick="dodadiKomentar(\'' + ime + '\', ' + i + ')">Dodadi</button>';
-        html += '</div>';
+        
+        html += '<div class="input-group input-group-sm">';
+        html += '<input type="text" class="form-control" placeholder="Додади коментар" id="novKomentar_' + ime + '_' + i + '">';
+        html += '<div class="input-group-append">';
+        html += '<button class="btn btn-info" onclick="dodadiKomentar(\'' + ime + '\', ' + i + ')">Испрати</button>';
+        html += '</div></div>';
+        
+        html += '</div></div>';
     }
-    html+='<button class="btn-danger" onclick="zatvori(this)">Zatvori</button>';
+    html += '</div>'; // Крај на десна колона
+    
+    html += '</div></div>'; // Крај на row и главен card
+    
     kontejner.innerHTML = html;
     kontejner.style.display = "block";
+    
+    // Скролај до деталите
+    kontejner.scrollIntoView({ behavior: 'smooth' });
 }
+
 function zatvori(button){
     var x = document.getElementById("prikaz_detali");
     x.style.display="none";
-
 }
 
 function likeSlika(ime, slikaindex){
@@ -212,10 +237,12 @@ function dislikeSlika(ime, slikaindex){
 }
 
 function dodadiKomentar(ime, slikaindex){
-    var komentar = document.getElementById("novKomentar_" + ime + "_" + slikaindex).value;
+    var inputPole = document.getElementById("novKomentar_" + ime + "_" + slikaindex);
+    var komentar = inputPole.value;
     if (komentar !== "") {
         bazaGradovi[ime].sliki[slikaindex].komentari.push(komentar);
         var divKomentari = document.getElementById("komentari_" + ime + "_" + slikaindex);
-        divKomentari.innerHTML += '<p>Komentar: ' + komentar + '</p>';
+        divKomentari.innerHTML += '<p class="small mb-1 border-bottom pb-1">💬 ' + komentar + '</p>';
+        inputPole.value = ""; // Го брише инпутот по испраќање
     }
 }
