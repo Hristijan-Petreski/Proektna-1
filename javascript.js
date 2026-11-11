@@ -171,7 +171,6 @@ function otvoriGrad(button) {
     
     html += '<div class="row">';
     
-    // Лева колона (Инфо)
     html += '<div class="col-md-5">';
     html += '<h4>Топ 10</h4><ul>';
     for (var i = 0; i < top10.length; i++) {
@@ -210,9 +209,9 @@ function otvoriGrad(button) {
         
         html += '</div></div>';
     }
-    html += '</div>'; // Крај на десна колона
+    html += '</div>';
     
-    html += '</div></div>'; // Крај на row и главен card
+    html += '</div></div>';
     
     kontejner.innerHTML = html;
     kontejner.style.display = "block";
@@ -243,6 +242,6 @@ function dodadiKomentar(ime, slikaindex){
         bazaGradovi[ime].sliki[slikaindex].komentari.push(komentar);
         var divKomentari = document.getElementById("komentari_" + ime + "_" + slikaindex);
         divKomentari.innerHTML += '<p class="small mb-1 border-bottom pb-1">💬 ' + komentar + '</p>';
-        inputPole.value = ""; // Го брише инпутот по испраќање
+        inputPole.value = "";
     }
 }
